@@ -1,7 +1,8 @@
 /* Fet per Mateo Salamanca */
 /* Implantació d'aplicacions web - Youtube */
 /* CSS pàgina principal Youtube.com (index.html) */
-html{
+
+.html_index{
     background-color: #0f0f0f;
 }
 body{
@@ -105,6 +106,7 @@ menu{
     justify-content: center;
     height: 40px;
     width: 35%;
+    min-width: 90px;
     overflow: hidden;
 }
 .img_crear{
@@ -305,6 +307,8 @@ menu{
     padding: 0px 24px;
     display: flex;
     align-items: center;
+    position: fixed;
+    background-color: #0f0f0f;
 }
 .etiquetes{
     width: fit-content;
@@ -354,12 +358,15 @@ menu{
 .fila_videos{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
 }
 .video{
     display: block;
     width: 31.5%;
     height: 50%;
     margin-right: 14px;
+    min-width: 300px;
 }
 .img_video{
     width: 100%;
@@ -379,6 +386,7 @@ menu{
 }
 .descripcio_video{
     display: block;
+    width: 100%;
 }
 .titol_video{
     font-weight: bold;
@@ -407,7 +415,7 @@ menu{
     font-size: 14px;
     font-family: Roboto;
 }
-.opcions_video{
+.opcions_videos{
     width: 36px;
     height: 36px;
     background-size: cover;
@@ -440,10 +448,12 @@ menu{
 }
 .fila_shorts{
     display: flex;
+    flex-wrap: wrap;
 }
 .short{
     width: 20%;
     height: 550px;
+    min-width: 300px;
 }
 .img_shorts{
     width: 95%;
@@ -452,4 +462,284 @@ menu{
 }
 .opcions_shorts{
     margin-right: 15px;
+}
+
+
+
+
+/* CSS detail.html Pàgina veure videos*/
+.cos_youtube2{
+    width: 100%;
+    height: 100%;
+    background-color: #0f0f0f;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+/* Apartat principal/part esquerre */
+.part_principal{
+    display: block;
+    width: 70%;
+    padding-bottom: 400px;
+    margin-left: 24px;
+    padding: 24px 24px 0px 0px;
+}
+.img_visualitzador_video{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+.info_botons_vd{
+    display: flex;
+    width: 100%;
+    height: 55px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.info_esquerre{
+    width: 27%;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+.creador{
+    display: flex;
+}
+.titol_vd{
+    color: #f1f1f1;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+}
+.img_creador_vd{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.info_creador_vd{
+    display: block;
+}
+.creador_vd{
+    display: flex;
+    color: #f1f1f1;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+}
+.verificat_vd{
+    width: 18px;
+    height: 18px;
+    color: #AAAAAA;
+    margin-left: 4px;
+}
+.subs_creador{
+    color: #AAAAAA;
+    font-size: 12px;
+    font-family: Roboto;
+    margin-top: 4px;
+}
+.bt_subscriu-me{
+    width: fit-content;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: Roboto;
+    font-size: 14px;
+    padding: 0px 16px;
+    margin-left: 20px;
+}
+.info_dreta{
+    justify-content: flex-end;
+    display: flex;
+}
+.bt_likes_dislikes{
+    display: flex;
+    align-items: center;
+    background-color: #252525;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: fit-content;
+    height: 36px;
+    padding: 0px 10px;
+}
+.likes{
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    color: white;
+    font-family: Roboto;
+    margin-right: 10px;
+}
+.linia{
+    height: 25px;
+    border-left: solid 1px #565656;
+}
+.dislikes{
+    margin-left: 10px;
+}
+.bt_comparteix_baixa_retalla{
+    display: flex;
+    align-items: center;
+    background-color: #252525;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: fit-content;
+    height: 36px;
+    padding: 0px 10px;
+    margin-left: 10px;
+    color: white;
+    font-family: Roboto;
+}
+.img_bt_comparteix_baixa_retalla{
+    margin-right: 5px;
+}
+.bt_opcions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #252525;
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+}
+.apartat_descripcio_vd{
+    display: block;
+    align-items: center;
+    background-color: #252525;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.estad_descripcio{
+    display: flex;
+    color: white;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.text_descripcio{
+    color: white;
+    font-family: Roboto;
+    font-size: 14px;
+}
+.apartat_info_contingut{
+    display: flex;
+    width: 100%;
+}
+.info_contingut{
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    background-color: #252525;
+    border-radius: 8px;
+    overflow: hidden;
+}
+#info_contingut_separacio{
+    margin-left: 15px;
+}
+.text_info_contingut{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: space-between;
+}
+.titol_info_contingut{
+    color: #f1f1f1;
+    font-size: 16px;
+    font-family: Roboto;
+}
+.text1_info_contingut{
+    color: #AAAAAA;
+    font-size: 12px;
+    font-family: Roboto;
+    margin-top: 8px;
+}
+.text2_info_contingut{
+    display: flex;
+    align-items: center;
+    color: #AAAAAA;
+    font-size: 14px;
+    font-family: Roboto;
+    margin-top: 4px;
+}
+.div_img_videojocs{
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.img_videojocs{
+    border-radius: 100%;
+}
+
+/* Apartat recomancions/part dreta */
+.etiquetes_recomanacions{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.fletxa_recomanacions{
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.videos_recomanats{
+    width: 21%;
+    height: 100%;
+    display: block;
+    padding: 24px 24px 0px 0px;
+}
+.video_recomanat{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    margin-bottom: 12px;
+}
+.img_video_recomanat{
+    width: 40%;
+    height: 100%;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+.info_vd_recomanat{
+    display: block;
+}
+.titol_video_recomanat{
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Roboto;
+    color: #f1f1f1;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;  
+    line-clamp: 2;   
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;  
+}
+.creador_vd_recomanat{
+    color: #AAAAAA;
+    font-size: 14px;
+    font-family: Roboto;
+}
+.estad_vd_recomanat{
+    color: #AAAAAA;
+    font-size: 14px;
+    font-family: Roboto;
 }
