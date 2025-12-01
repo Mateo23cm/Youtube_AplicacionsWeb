@@ -2,7 +2,7 @@
 /* Implantació d'aplicacions web - Youtube */
 /* CSS pàgina principal Youtube.com (index.html) */
 
-.html_index{
+html {
     background-color: #0f0f0f;
 }
 body{
@@ -463,9 +463,119 @@ menu{
 .opcions_shorts{
     margin-right: 15px;
 }
-
-
-
+.apartat_comentaris{
+    margin: 30px 0px 0px 0px;
+    padding-right: 20px;
+}
+.encapcalament_comentaris{
+    display: flex;
+    width: 100%;
+}
+.div_num_comentaris{
+    display: flex;
+}
+.num_comentaris{
+    color: #f1f1f1;
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: bold;
+}
+#margin_num_comentaris{
+    margin-left: 5px;
+}
+.div_ordena{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.ordena{
+    color: #f1f1f1;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: bold;
+    margin-left: 8px;
+}
+.afegeix_comentari{
+    width: 100%;
+    display: flex;
+    margin: 20px 0px;
+    align-items: center;
+}
+#img_usuari_afegir_comentari{
+    border-radius: 100%;
+}
+.div_text_afegeix_comentari{
+    width: 100%;
+    border-bottom: 1px solid hsl(0, 0%, 18.82%);
+    margin-left: 8px;
+    padding-bottom: 5px;
+}
+.text_afegeix_comentari{
+    color: #AAAAAA;
+    font-size: 14px;
+    font-family: Roboto;
+}
+.comentari{
+    display: flex;
+    margin-bottom: 20px;
+}
+.contingut_comentari{
+    width: 100%;
+    display: block;
+}
+.img_usuari_comentari{
+    border-radius: 100%;
+    margin-right: 16px;
+}
+.info_usuari_opcions{
+    display: flex;
+    justify-content: space-between;
+}
+.nom_usuari_comentari{
+    color: #f1f1f1;
+    font-size: 13px;
+    font-family: Roboto;
+    margin-right: 2px;
+}
+.temps_comentari{
+    color: #AAAAAA;
+    font-size: 12px;
+    font-family: Roboto;
+}
+.text_comentari{
+    color: #f1f1f1;
+    font-size: 14px;
+    font-family: Roboto;
+}
+.interaccions_comentari{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+.likes_comentari{
+    color: #AAAAAA;
+    font-size: 12px;
+    font-family: Roboto;
+    margin: 0px 16px 0px 10px;
+}
+.respostes{
+    display: flex;
+    align-items: center;
+}
+.text_respon{
+    font-weight: 500;
+    font-size: 12px;
+    font-family: Roboto;
+    color: #f1f1f1;
+    margin-left: 30px;
+}
+.text_boto_respostes{
+    color: #3ea6ff;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 500;
+    margin: 0px 5px;
+}
 
 /* CSS detail.html Pàgina veure videos*/
 .cos_youtube2{
@@ -475,6 +585,7 @@ menu{
     padding-top: 60px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 /* Apartat principal/part esquerre */
 .part_principal{
@@ -706,6 +817,8 @@ menu{
     display: block;
     padding: 24px 24px 0px 0px;
 }
+
+/* Videos recomanats */
 .video_recomanat{
     width: 100%;
     height: 10%;
@@ -713,12 +826,13 @@ menu{
     margin-bottom: 12px;
 }
 .img_video_recomanat{
-    width: 40%;
+    width: 45%;
     height: 100%;
     border-radius: 8px;
     margin-right: 8px;
 }
 .info_vd_recomanat{
+    width: 55%;
     display: block;
 }
 .titol_video_recomanat{
@@ -737,9 +851,11 @@ menu{
     color: #AAAAAA;
     font-size: 14px;
     font-family: Roboto;
+    margin-top: 2px;
 }
 .estad_vd_recomanat{
     color: #AAAAAA;
     font-size: 14px;
     font-family: Roboto;
+    margin-top: 2px;
 }
